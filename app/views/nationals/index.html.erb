@@ -1,8 +1,5 @@
 <div class="hero">
 
-
-
-
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -31,7 +28,7 @@
   </div>
 
   <% @nationals.each do |national| %>
-    <div>
+    <div class="booyah-box col-2 offset-0">
       <h1><%= national.Year %></h1><br />
       <i><%= national.Model %></i><br />
       <p><%= national.Engine %></p><br />

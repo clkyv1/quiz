@@ -8,12 +8,13 @@ class NationalsController < ApplicationController
   end
 
   def create
-     Natinal.create(national_params)
+     National.create(national_params)
      redirect_to root_path
   end
 
   private
 
-  def place_params
+  def national_params
     params.required(:national).permit(:Year, :Model, :Engine)
+  end
 end
