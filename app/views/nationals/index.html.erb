@@ -1,5 +1,7 @@
 <div class="hero">
-  <h1>Welcome to the Tri-5 Nationals</h1>
+
+
+
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -27,4 +29,16 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
+
+  <% @nationals.each do |national| %>
+    <div>
+      <h1><%= national.Year %></h1><br />
+      <i><%= national.Model %></i><br />
+      <p><%= national.Engine %></p><br />
+    </div>
+
+    <hr />
+  <% end %>
+
 </div>
+
